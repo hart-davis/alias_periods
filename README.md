@@ -1,5 +1,7 @@
 # alias_periods
 
+[This is still a work in progress so there may be bugs in the software]
+
 A git repository containing a function to estimate the alias period for tidal constituents for satellite altimetry missions. 
 
 The thoery behind this is from: https://kb.osu.edu/dspace/bitstream/handle/1811/78650/1/SES_GeodeticScience_Report_471.pdf
