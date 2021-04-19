@@ -1,7 +1,3 @@
-import pandas as pd
-import numpy as np
-import xarray as xr
-
 def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_header=0,
                   skip_rows_in_catfile=1, P = 0):
 
@@ -14,7 +10,10 @@ def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_hea
     skip_rows_in_catfile: the number of rows to skip in catfile that is used
     P: ones own numbder of days used to study additional missions
     """
-
+    import pandas as pd
+    import numpy as np
+    import xarray as xr
+    
     con = constituent
     sk = skip_rows_in_catfile
     cat = pd.read_csv(catfile,header=[cat_header],delim_whitespace=True,

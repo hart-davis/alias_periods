@@ -10,6 +10,8 @@ def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_hea
     skip_rows_in_catfile: the number of rows to skip in catfile that is used
     P: ones own numbder of days used to study additional missions
     """
+    import pandas as pd
+    import numpy as np
 
     con = constituent
     sk = skip_rows_in_catfile

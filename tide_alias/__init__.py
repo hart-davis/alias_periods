@@ -1,1 +1,1 @@
-from alias_perid import tidal_aliasing
+from alias_period import tidal_aliasing
