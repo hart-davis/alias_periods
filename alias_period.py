@@ -30,6 +30,9 @@ def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_hea
     elif am == 'sentinel-3' or am == 's3':
         P = 27.0
         print('Cycle length = 27.0 days')
+    elif am == 'cryosat-2' or am == 'cry':
+        P = 369
+        print('Cycle length = 369 days')
     else:
         if P > 0:
             P=P
@@ -52,7 +55,7 @@ def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_hea
         f_a = np.abs(np.mod(fk+fs/2,fs)-fs/2)
         alias_period[j] =  1/f_a
 
-    alias_period[np.where(alias_period>10000)] = np.nan
+#     alias_period[np.where(alias_period>10000)] = np.nan
     
     # outputting the data
 
