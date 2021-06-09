@@ -28,6 +28,9 @@ def tidal_aliasing(constituent, catfile, altimetry_mission, output=None, cat_hea
     elif am == 'envisat' or am == 'ers-1' or am == 'ers-2':
         P = 35.0
         print('Cycle length = 35.0 days')
+    elif am == 'sentinel-3' or am == 's3':
+        P = 27.0
+        print('Cycle length = 27.0 days')
     else:
         if P > 0:
             P=P
